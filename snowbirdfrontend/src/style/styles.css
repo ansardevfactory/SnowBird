@@ -1,0 +1,475 @@
+body{
+  margin:0 auto;
+  overflow: hidden;
+}
+.outer {
+  width: 100%;
+  height: 100vh;
+  
+}
+
+.firstrow {
+  border-bottom: 1px solid black;
+  text-align: right;
+   height: 6vh; 
+  /* padding-top: 50px; */
+  width:100%;
+}
+/* .firstrow label {
+  color: gray;
+  font-size: small;
+
+} */
+/* .loginuser label
+{
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+  color:gray;
+  font-size:medium;
+
+} */
+.secondrow {
+  width: 100%;
+  height: 100vh;
+}
+.usericon {
+  height: 3vh;
+  width: 20px;
+  border-radius: 15px;
+  background-color: blue;
+  float: right;
+  /* padding-left: 5px; 
+   padding-top: 5px; */
+  
+  
+}
+.loginuser
+{
+  padding-top: 20px; 
+  
+  /* float: right; */
+}
+.loginuser label{
+  color:gray;
+  font-weight: 200;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+}
+
+
+.firstcolumn {
+  width: 20%;
+  height: 100vh;
+  border-right: 1px solid black;
+  float: left;
+}
+.firstcolumn li {
+  list-style: none;
+  text-align: left;
+  padding: 6%;
+  background-color: #D4CBCB;
+}
+.firstcolumn li:hover {
+  color: white;
+}
+.secondcolumn {
+  width: 79%;
+  height: 100vh;
+  float: right;
+}
+.usernamerow {
+  width:20%;
+  /* height: 15vh; */
+   display: flex;
+}
+.usernamerow ::-webkit-scrollbar{ 
+  height: 6px;
+  border-radius: 1px;
+  background-color:aqua;
+}
+.usernamerow ::-webkit-scrollbar-thumb{
+  border-radius: 4px; 
+  background-color: #a3a3a3;
+} */
+
+/* .users label
+{
+    text-align: center;
+    color: blue;
+} */
+.users {
+  height: 3vh;
+  width: 20px;
+  border-radius: 25px;
+  background-color: red;
+  margin: 30%;
+  padding: 10px;
+  margin-top: 10px;
+}
+/* .singleuser {
+  overflow-x: scroll;
+  padding-top: 10%;
+  margin-right: 20%;
+  
+} */
+.eachuser {
+  padding: 2%;
+  float: left;
+  width: 20%;
+  height: 20vh;
+  text-align: center;
+  margin-left:20px;
+  
+
+}
+.statusnamerow {
+  width: 100%;
+  height: 5vh;
+  margin-top: 4%;
+  float: left;
+  
+}
+.taskbar1 {
+  width: 20%;
+  height: 50vh;
+  border: 1px solid black;
+  float: left;
+}
+.taskbar2 {
+  width: 20%;
+  height: 50vh;
+  border: 1px solid black;
+  float: left;
+  margin-left: 3%;
+}
+.taskbar3 {
+  width: 20%;
+  height: 50vh;
+  border: 1px solid black;
+  float: left;
+  margin-left: 3%;
+}
+.taskbar4 {
+  width: 20%;
+  height: 50vh;
+  border: 1px solid black;
+  float: left;
+  margin-left: 3%;
+}
+/* .tasks
+{
+    width:100%;
+    height: 50vh;
+   
+} */
+.statusnamerow label {
+  margin-left: 14%;
+}
+.userlabel {
+  padding-top: 50px;
+  color:gray
+}
+
+/* Project  Styling */
+
+.prowone {
+  width: 80%;
+  height: 15vh;
+  /* background-color: aquamarine; */
+  /* border-bottom: 1px solid black; */
+  border-left: 5%;
+  padding-top: 5%;
+}
+.prowone label {
+  color: slategrey;
+  font-weight: 900;
+  font-size: x-large;
+  text-align: center;
+  padding-left: 5%;
+}
+.prowone button {
+  float: right;
+  background-color:#B2B2B2;
+  color: white;
+  border: none;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  width: 15%;
+}
+/* .tablerow table {
+  background-color: aqua; 
+  border-top: 1px solid gray;
+  padding-left:2%;
+  
+} */
+
+.tablerow {
+  /* border-top: 1px solid gray; */
+  width: 80%;
+
+  height: 60vh;
+}
+/* .tablerow th {
+  color: slategray;
+  border-bottom: 1px solid gray;
+  width: 20%;
+  
+} */
+/* .tablerow td {
+  color: slategray;
+  width: 45%;
+  border-bottom: 1px solid gray;
+  padding: 4%;
+} */
+.tablerow tr {
+  text-align: center;
+}
+
+.pbutton {
+  text-align: right;
+}
+.pbutton button {
+  border: none;
+  background-color: white;
+}
+.psecondrow
+{
+    width:100%;
+    height: 10vh;
+   
+    padding-left: 10%;
+}
+.titlerow
+{
+    
+    width:100%;
+    height:10vh;
+
+}
+.titlerow input{
+   
+    width: 70%;
+    height: 5vh;
+   
+}
+.titlerow label
+{
+    color: gray;
+}
+.descriptiion
+{
+    
+width:100%;
+ height:25vh;
+}
+.descriptiion
+{
+    color: gray;
+}
+.descriptiion input{
+    width:70%;
+    height:20vh;
+    
+}
+.typerow
+{
+    width:100%;
+    
+    height: 10vh;
+}
+.typerow select{
+    width:70%;
+    height: 5vh;
+}
+.typerow label{
+    color: gray;
+}
+.ownerrow
+{
+    
+    width:100%;
+    height: 10vh;
+}
+.ownerrow select{
+    width:70%;
+    height: 5vh;
+}
+.ownerrow label
+{
+    color: gray;
+}
+.ownerrow select
+{
+    color: grey;
+}
+.typerow select{
+    color: grey;
+}
+.tablerow thead.idth
+{
+    width:10%;
+}
+.tablerow.nameth
+{
+    width:20%;
+}
+/* .slider{
+  width:30%;
+  margin-left: 25%;
+  height: 150px;
+  overflow-x: scroll;
+  display: flex;
+  
+} */
+.project
+{
+  background-color:white;
+}
+.epic
+{ 
+   background-color:#D4CBCB;
+   
+   
+}
+.task{
+  background-color:#EEE6E6;
+  
+}
+.withborder {
+  border: 1px solid gray;
+  border-left: none;
+  border-right: none;
+}
+.right {
+  text-align: right;
+}
+.childbg {
+  background-color: #ededed;
+}
+.parentbg {
+  background-color: rgb(116, 116, 255);
+}
+.constant {
+  width: 5%;
+}
+table {
+  margin-top: 50px;
+  border-collapse: collapse;
+  width: 100%;
+}
+td,
+th {
+  font-size: 20px;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.constant {
+  width: 10%;
+}
+.none {
+  display: none;
+}
+.display {
+  display: table-row;
+  transition-property: all;
+  transition-duration: 4s;
+  transition-delay: 2s;
+}
+
+.secondcolumn .secfirstrow {
+  width: 100%;
+}
+
+.secondcolumn .secsecondrow {
+  width: 100%;
+}
+.secondcolumn .secthirdrow {
+  width: 100%;
+  margin-left: 50px;
+  float: left;
+  border: 1px solid black;
+  border-left: 0;
+  border-right: 0;
+}
+.secthirdrow table{
+width:100%;
+text-align: left;
+}
+
+.secthirdrow th{
+  text-align: left;
+  background-color:lightgray ;
+} */
+
+.secondcolumn .secsecondrow button{
+  float:right;
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+  margin-bottom: 60px;
+  background-color: rgb(236, 203, 203) ;
+}
+.listcontainer {
+  background-color:white;
+  width: 20%;
+  margin-left: 25%;
+  padding-top: 10px;
+  padding-left: 10px;
+  overflow-x: scroll;
+  /* display: flex; */
+  padding-bottom: 10px;
+  padding-right: 5px;
+}
+.listcontainer::-webkit-scrollbar{ 
+    height: 6px;
+    border-radius: 2px;
+    background-color: #ededed; 
+}
+.listcontainer::-webkit-scrollbar-thumb{
+    border-radius: 3px; 
+    background-color: #a3a3a3;
+}
+
+.redcircle {
+  background-color: rgba(229, 125, 125, 0.909);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.selectedredcircle { 
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+}
+#fbox:checked+label
+{
+  text-decoration: line-through;
+  
+}
+#fbox .label
+{
+  text-decoration: line-through;
+  
+}
+
+#secbox:checked+label
+{
+  text-decoration: line-through;
+  
+}
+#thirdbox:checked+label
+{
+  text-decoration: line-through;
+  
+}
+#fourbox:checked+label
+{
+  text-decoration: line-through;
+  
+}
