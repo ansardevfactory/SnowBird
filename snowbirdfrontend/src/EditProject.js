@@ -31,12 +31,13 @@ function EditProject() {
         if (len > 0) {
 
           setOption(res.data);
+          //console.log("res"+JSON.stringify(res.data));
          }
       })
       .catch();
 
       axios.post(url1,request1,header1).then((res)=>{
-        console.log(res.data);
+        console.log("res"+JSON.stringify(res.data));
         setPdetails(res.data);
 
       }).catch();
@@ -66,10 +67,7 @@ function EditProject() {
         <div className="outer">
           {/* USer name with icon */}
 
-          <div className="firstrow">
-            <div className="usericon"> </div>
-            <label>User</label>
-          </div>
+         
           <div className="secondrow">
             {/* Side navigation menu */}
             {<Menu/>}

@@ -8,12 +8,10 @@ import AddUser from "./AddUser";
 import EditUser from "./EditUser";
 import Users from "./Users";
 import CheckBox from "./CheckBox";
-import Sample1 from "./Sample1";
-import Sample from "./Sample";
 import Menu from "./Menu";
 import Sprint from "./Sprint";
 import Task from "./Task";
-import Test from "./Test";
+
 
 function Navigation() {
   return (
@@ -37,8 +35,7 @@ function Navigation() {
           <Route path="/task" element={<Task />}></Route>
           <Route path="/sprint" element={<Sprint />}></Route>
           <Route path="/menu" element={<Menu />}></Route>
-          <Route path="/test" element={<Test />}></Route>
-          <Route path="/sample" element={<Sample />}></Route>
+          
         </Routes>
       </BrowserRouter>
     </div>
