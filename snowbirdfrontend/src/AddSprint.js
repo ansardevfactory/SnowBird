@@ -39,11 +39,11 @@ function AddSprint() {
     var url = 'http://localhost:8000/insertSprint'
     var request = {
       txtSprintname: Sprintname,
-      Description:Description,
+      Description: Description,
       Status: Status,
-      txtUsername:assignedto,
-      dtActdate:fromdate,
-      dtActenddate: todate
+      txtUsername: assignedto,
+      dtActdate: fromdate,
+      dtActenddate: todate,
     }
     var header = {}
 
@@ -51,11 +51,10 @@ function AddSprint() {
       .post(url, request, header)
       .then((res) => {
         console.log(request.dtActenddate)
-        if (res.data) 
+        if (res.data)
           //console.log('g1' + JSON.stringify(res.data))
           //console.log(request.dtActenddate)
           alert('added new sprint')
-        
       })
       .catch()
   }
@@ -76,7 +75,7 @@ function AddSprint() {
             <div className="as_sc_row1_cl2">
               <button onClick={handleclick}>SAVE</button>
             </div>
-             </div>
+          </div>
           <div className="as_sc_row2">
             <div className="as_sc_row2_cl1">
               <label>Title</label>
@@ -90,9 +89,13 @@ function AddSprint() {
 
             <div className="as_sc_row2_cl2">
               <label>Description</label>
-              <textarea rows="8" cols="60" onChange={(e) => {
-                  setdescription(e.target.value)}}
-                ></textarea>
+              <textarea
+                rows="8"
+                cols="60"
+                onChange={(e) => {
+                  setdescription(e.target.value)
+                }}
+              ></textarea>
             </div>
           </div>
           <div className="as_sc_row3">
@@ -100,7 +103,7 @@ function AddSprint() {
               <label>Status</label>
               <select
                 className="as_sc_dropbox1"
-               // value={Status}
+                // value={Status}
                 onChange={(e) => {
                   setStatus(e.target.value)
                 }}
@@ -111,8 +114,7 @@ function AddSprint() {
                       <option value={stitem.Status}>{stitem.Status}</option>
                     </>
                   )
-                })} 
-                
+                })}
               </select>
 
               {/* <select className="as_sc_dropbox1">
@@ -134,7 +136,9 @@ function AddSprint() {
                 {array.map((item, index) => {
                   return (
                     <>
-                      <option value={item.txtUserName}>{item.txtUserName}</option>
+                      <option value={item.txtUserName}>
+                        {item.txtUserName}
+                      </option>
                     </>
                   )
                 })}

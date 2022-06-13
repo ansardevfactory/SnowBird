@@ -1,19 +1,18 @@
-body{
-  margin:0 auto;
+body {
+  margin: 0 auto;
   overflow: hidden;
 }
 .outer {
   width: 100%;
   height: 100vh;
-  
 }
 
 .firstrow {
   border-bottom: 1px solid black;
   text-align: right;
-   height: 6vh; 
+  height: 6vh;
   /* padding-top: 50px; */
-  width:100%;
+  width: 100%;
 }
 /* .firstrow label {
   color: gray;
@@ -41,29 +40,20 @@ body{
   border-radius: 25px;
   background-color: blue;
   float: right;
-  padding-right: 10px; 
-   /* padding-top: 5px;  */
-  
-  
+  padding-right: 10px;
+  /* padding-top: 5px;  */
 }
-.loginuser
-{
-  padding-top: 25px; 
+.loginuser {
+  padding-top: 25px;
 
-
-  
   /* float: right; */
 }
-.loginuser label{
-  color:gray;
+.loginuser label {
+  color: gray;
   font-weight: 200;
   padding-top: 50px;
   padding-bottom: 5px;
-  
- 
-
 }
-
 
 .firstcolumn {
   width: 20%;
@@ -75,7 +65,7 @@ body{
   list-style: none;
   text-align: left;
   padding: 6%;
-  background-color: #D4CBCB;
+  background-color: #d4cbcb;
 }
 .firstcolumn li:hover {
   color: white;
@@ -86,19 +76,20 @@ body{
   float: right;
 }
 .usernamerow {
-  width:20%;
+  width: 20%;
   /* height: 15vh; */
-   display: flex;
+  display: flex;
 }
-.usernamerow ::-webkit-scrollbar{ 
+.usernamerow ::-webkit-scrollbar {
   height: 6px;
   border-radius: 1px;
-  background-color:aqua;
+  background-color: aqua;
 }
-.usernamerow ::-webkit-scrollbar-thumb{
-  border-radius: 4px; 
+.usernamerow ::-webkit-scrollbar-thumb {
+  border-radius: 4px;
   background-color: #a3a3a3;
-} */
+}
+*/
 
 /* .users label
 {
@@ -126,16 +117,13 @@ body{
   width: 20%;
   height: 20vh;
   text-align: center;
-  margin-left:20px;
-  
-
+  margin-left: 20px;
 }
 .statusnamerow {
   width: 100%;
   height: 5vh;
   margin-top: 4%;
   float: left;
-  
 }
 .taskbar1 {
   width: 20%;
@@ -175,7 +163,7 @@ body{
 }
 .userlabel {
   padding-top: 50px;
-  color:gray
+  color: gray;
 }
 
 /* Project  Styling */
@@ -197,7 +185,7 @@ body{
 }
 .prowone button {
   float: right;
-  background-color:#B2B2B2;
+  background-color: #b2b2b2;
   color: white;
   border: none;
   padding-top: 1%;
@@ -240,86 +228,68 @@ body{
   border: none;
   background-color: white;
 }
-.psecondrow
-{
-    width:100%;
-    height: 10vh;
-   
-    padding-left: 10%;
-}
-.titlerow
-{
-    
-    width:100%;
-    height:10vh;
+.psecondrow {
+  width: 100%;
+  height: 10vh;
 
+  padding-left: 10%;
 }
-.titlerow input{
-   
-    width: 70%;
-    height: 5vh;
-   
+.titlerow {
+  width: 100%;
+  height: 10vh;
 }
-.titlerow label
-{
-    color: gray;
+.titlerow input {
+  width: 70%;
+  height: 5vh;
 }
-.descriptiion
-{
-    
-width:100%;
- height:25vh;
+.titlerow label {
+  color: gray;
 }
-.descriptiion
-{
-    color: gray;
+.descriptiion {
+  width: 100%;
+  height: 25vh;
 }
-.descriptiion input{
-    width:70%;
-    height:20vh;
-    
+.descriptiion {
+  color: gray;
 }
-.typerow
-{
-    width:100%;
-    
-    height: 10vh;
+.descriptiion input {
+  width: 70%;
+  height: 20vh;
 }
-.typerow select{
-    width:70%;
-    height: 5vh;
+.typerow {
+  width: 100%;
+
+  height: 10vh;
 }
-.typerow label{
-    color: gray;
+.typerow select {
+  width: 70%;
+  height: 5vh;
 }
-.ownerrow
-{
-    
-    width:100%;
-    height: 10vh;
+.typerow label {
+  color: gray;
 }
-.ownerrow select{
-    width:70%;
-    height: 5vh;
+.ownerrow {
+  width: 100%;
+  height: 10vh;
 }
-.ownerrow label
-{
-    color: gray;
+.ownerrow select {
+  width: 70%;
+  height: 5vh;
 }
-.ownerrow select
-{
-    color: grey;
+.ownerrow label {
+  color: gray;
 }
-.typerow select{
-    color: grey;
+.ownerrow select {
+  color: grey;
 }
-.tablerow thead.idth
-{
-    width:10%;
+.typerow select {
+  color: grey;
 }
-.tablerow.nameth
-{
-    width:20%;
+.tablerow thead.idth {
+  width: 10%;
+}
+.tablerow.nameth {
+  width: 20%;
 }
 /* .slider{
   width:30%;
@@ -329,19 +299,14 @@ width:100%;
   display: flex;
   
 } */
-.project
-{
-  background-color:white;
+.project {
+  background-color: white;
 }
-.epic
-{ 
-   background-color:#D4CBCB;
-   
-   
+.epic {
+  background-color: #d4cbcb;
 }
-.task{
-  background-color:#EEE6E6;
-  
+.task {
+  background-color: #eee6e6;
 }
 .withborder {
   border: 1px solid gray;
@@ -400,26 +365,25 @@ th {
   border-left: 0;
   border-right: 0;
 }
-.secthirdrow table{
-width:100%;
-text-align: left;
+.secthirdrow table {
+  width: 100%;
+  text-align: left;
 }
 
-.secthirdrow th{
+.secthirdrow th {
   text-align: left;
-  background-color:lightgray ;
-} */
-
-.secondcolumn .secsecondrow button{
-  float:right;
+  background-color: lightgray;
+}
+*/ .secondcolumn .secsecondrow button {
+  float: right;
   border: 1px;
   border-style: solid;
   border-color: black;
   margin-bottom: 60px;
-  background-color: rgb(236, 203, 203) ;
+  background-color: rgb(236, 203, 203);
 }
 .listcontainer {
-  background-color:white;
+  background-color: white;
   width: 20%;
   margin-left: 25%;
   padding-top: 10px;
@@ -429,14 +393,14 @@ text-align: left;
   padding-bottom: 10px;
   padding-right: 5px;
 }
-.listcontainer::-webkit-scrollbar{ 
-    height: 6px;
-    border-radius: 2px;
-    background-color: #ededed; 
+.listcontainer::-webkit-scrollbar {
+  height: 6px;
+  border-radius: 2px;
+  background-color: #ededed;
 }
-.listcontainer::-webkit-scrollbar-thumb{
-    border-radius: 3px; 
-    background-color: #a3a3a3;
+.listcontainer::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: #a3a3a3;
 }
 
 .redcircle {
@@ -445,35 +409,25 @@ text-align: left;
   height: 50px;
   border-radius: 50%;
 }
-.selectedredcircle { 
-    background-color: red;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%; 
+.selectedredcircle {
+  background-color: red;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
-#fbox:checked+label
-{
+#fbox:checked + label {
   text-decoration: line-through;
-  
 }
-#fbox .label
-{
+#fbox .label {
   text-decoration: line-through;
-  
 }
 
-#secbox:checked+label
-{
+#secbox:checked + label {
   text-decoration: line-through;
-  
 }
-#thirdbox:checked+label
-{
+#thirdbox:checked + label {
   text-decoration: line-through;
-  
 }
-#fourbox:checked+label
-{
+#fourbox:checked + label {
   text-decoration: line-through;
-  
 }

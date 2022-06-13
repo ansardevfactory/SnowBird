@@ -1,4 +1,4 @@
-                      import './style.css'
+import './style.css'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 import { useEffect, useState } from 'react'
@@ -32,9 +32,9 @@ function Sprints() {
   function handleClick() {
     navigate('/AddSprint')
   }
-  function newClick(e,Id) {
-    localStorage.setItem('spid',Id)
-   navigate('/EditSprint')
+  function newClick(e, Id) {
+    localStorage.setItem('spid', Id)
+    navigate('/EditSprint')
   }
   useEffect(() => {
     var url = 'http://localhost:8000/fetchsprintlist'
@@ -80,7 +80,7 @@ function Sprints() {
               {sprintarray.map((item, index) => {
                 return (
                   <>
-                    <tr onClick={(e)=>newClick(e,item.Id)}>
+                    <tr onClick={(e) => newClick(e, item.Id)}>
                       <td className="tbdata">{item.Id}</td>
                       <td>{item.txtSprintname}</td>
                       <td>{item.dtActstartdate}</td>
