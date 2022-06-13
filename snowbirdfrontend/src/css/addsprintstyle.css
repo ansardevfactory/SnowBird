@@ -1,0 +1,142 @@
+.secondrow{
+    display: flex;
+}
+.as_sc{
+    width: 100%; 
+    padding: 40px;
+}
+.as_sc_row1{
+    margin-bottom: 5%;
+    width: 100%;
+    display: flex;
+
+}
+.as_sc_row1 .as_sc_row1_cl1{
+    text-align: left;
+    width: 50%;
+}
+
+.as_sc_row1_cl1 label{
+    font-family: 'Lucida Sans';
+    font-size:x-large;
+    text-align: justify;
+    font-weight:bolder;
+    color:rgba(139, 133, 133, 0.975) ;
+  }
+.as_sc_row1 .as_sc_row1_cl2{
+    text-align: right;
+    width: 50%;
+}
+.as_sc_row1 button{
+    text-align: right;
+    background-color:rgb(187, 180, 180) ;
+    padding-bottom: 5px;
+    padding-top: 5px;;
+padding-left: 12px;
+padding-right: 12px;
+}
+.as_sc_row2{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+}
+
+.as_sc_row2_cl1,.as_sc_row2_cl2{
+width:49%;
+
+}
+.as_sc_row2_cl1 input,.as_sc_row2_cl2 textarea{
+    width:100%;
+    float:left;
+    box-sizing: border-box;
+    padding:5px;
+}
+
+.as_sc_row3{
+    margin-top: 4%;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+.as_sc_row3_cl1,.as_sc_row3_cl2{
+    width: 49%;
+}
+
+.as_sc_dropbox1,.as_sc_dropbox2{
+    width:100%;
+    float:left;
+    box-sizing: border-box;
+    padding:5px;
+}
+.as_sc_row4{
+    margin-top: 4%;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+.as_sc_row4_cl1{
+    width:49%;
+}
+.as_sc_row4_cl2{
+    width:49%;
+}
+.as_sc_row4_cl1 input,
+    .as_sc_row4_cl2 input{
+        width:100%;
+        box-sizing: border-box;
+        padding:5px; 
+    }
+
+    .as_sc_row6 {
+        
+        text-align: right;
+      }
+      .as_sc_row6 button {
+        border: none;
+        background-color: white;
+        padding:2%;
+      }
+      
+      .as_sc_row6 button:hover {
+        font-weight: 500;
+        color: green;
+      }
+      .tablerow{
+margin-top: 20px;
+      }
+      
+      .TblFirstrow{
+          margin-top: 10px;
+
+      }
+      
+    .as_sc_row7{
+        margin-bottom: 5%;
+        width: 100%;
+        display: flex;
+    margin-top: 15px;
+    }
+    .as_sc_row7_cl1,.as_sc_row7_cl2 {
+        text-align: left;
+        width: 50%;
+    }
+    
+    .as_sc_row7_cl1 label{
+        font-family: 'Lucida Sans';
+        font-size:x-large;
+        text-align: justify;
+        font-weight:bolder;
+        color:rgba(139, 133, 133, 0.975) ;
+      }
+    .as_sc_row7_cl2{
+        text-align:right;
+        width: 50%;
+    }
+    .as_sc_row7 button{
+        text-align: right;
+        background-color:rgb(187, 180, 180) ;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
