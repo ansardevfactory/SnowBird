@@ -41,7 +41,7 @@ function EditSprint() {
         setArray(res.data)
       })
       .catch()
-    
+
     var url1 = 'http://localhost:8000/sprintdetails'
     var req1 = { Id: tempid }
     var header1 = {}
@@ -51,7 +51,7 @@ function EditSprint() {
         //alert('hi')
         //console.log(JSON.stringify(req1))
         console.log('response' + JSON.stringify(res.data))
-       
+
         setsparray(res.data)
 
         settextSprintname(res.data[0].txtSprintname)
@@ -60,18 +60,17 @@ function EditSprint() {
         settxtUserName(res.data[0].assignedto)
         setdtActstartdate(res.data[0].dtActstartdate)
         setdtActenddate(res.data[0].dtActenddate)
-        console.log("hi"+res.data[0].dtActenddate)
+        console.log('hi' + res.data[0].dtActenddate)
       })
       .catch()
-      var url2 = 'http://localhost:8000/fetchsprintwisetasklist'
-    var req2 = {Id:tempid}
+    var url2 = 'http://localhost:8000/fetchsprintwisetasklist'
+    var req2 = { Id: tempid }
     var header2 = {}
     axios
       .post(url2, req2, header2)
       .then((res) => {
         // console.log(res)
         settaskarray(res.data)
-      
       })
       .catch()
   }, [])
@@ -194,10 +193,9 @@ function EditSprint() {
             <div className="as_sc_row4_cl1">
               <label>From date</label>
               {/* <DatePicker selected={fromdate} onChange={date => setdtActstartdate(date)} /> */}
- 
+
               <input
                 type="date-time local"
-                
                 value={fromdate}
                 onChange={(e) => {
                   setdtActstartdate(e.target.value)
