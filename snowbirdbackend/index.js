@@ -10,8 +10,8 @@ var con = mysql.createConnection(
   {
     host: "localhost",
     user: "root",
-    password: "password1234",
-    database: "project"
+    password: "password",
+    database: "agileprom"
 
   });
 con.connect(function (err) {
