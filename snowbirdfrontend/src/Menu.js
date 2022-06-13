@@ -1,39 +1,27 @@
-import "./style/styles.css";
-import { useNavigate } from "react-router-dom";
+import './style.css'
+import { useNavigate } from 'react-router-dom'
 function Menu() {
-  var navigate = useNavigate();
+  var navigate = useNavigate()
   function project() {
-    navigate("/project");
+    navigate('/project')
   }
   function epic() {
-    navigate("/epic");
+    navigate('/epic')
   }
-  function board(){
-      navigate("/");
+  function board() {
+    navigate('/')
   }
-  function task()
-  {
-      navigate("/task");
+  function task() {
+    navigate('/Task')
   }
-  function sprint()
-  {
-      navigate("/sprint")
+  function sprint() {
+    navigate('/Sprints')
   }
-  function users()
-  {
-    navigate("/users")
-}
+  function users() {
+    navigate('/Users')
+  }
   return (
     <>
-    <div className="firstrow">
-     
-            <div className="usericon"> 
-            <div className="loginuser">
-            <label>User</label>
-            </div>
-          </div>
-        
-        </div>
       <div className="firstcolumn">
         <nav>
           <li onClick={board}>Board</li>
@@ -45,6 +33,6 @@ function Menu() {
         </nav>
       </div>
     </>
-  );
+  )
 }
-export default Menu;
+export default Menu

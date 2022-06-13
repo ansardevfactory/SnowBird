@@ -1,89 +1,77 @@
-import axios from 'axios';
-import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import './style/styles.css';
-import Menu from './Menu';
-  
+import axios from 'axios'
+import './style.css'
+import { useNavigate } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import Menu from './Menu'
+
 function Users() {
-    const [array,setArray]=useState([]);
-    const navigate=useNavigate();
-    useEffect(()=>{
-      var url="http://localhost:8000/userfetchforusers";
-    var header={};
-    var request={};
-    axios.post(url,request,header).then((res)=>{
-        console.log(res.data);
-        setArray(res.data);
-    }).catch();
+  const navigate = useNavigate()
+  function handleClick() {
+    navigate('/AddUser')
+  }
+  function newClick() {
+    navigate('/EditUser')
+  }
 
-    },[])
-    
+  const [array, setarray] = useState([])
+  useEffect(() => {
+    var request = {}
+    var header = {}
+    var url = 'http://localhost:8000/fetchuserRole'
 
-function newuser()
-{
+    axios
+      .post(url, request, header)
+      .then((res) => {
+        console.log(res.data)
+        setarray(res.data)
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+  }, [])
 
-         navigate('/adduser');
-    }
-    function edituser(n,name)
-    {
-      console.log(n);
-      navigate("/edituser")
-      localStorage.setItem("id",n);
-      localStorage.setItem("name",name);
-
-    }
-  
   return (
     <div>
       <div className="outer">
         {/* USer name with icon */}
-        {/* <div className="firstrow">
+        <div className="firstrow">
           <div className="usericon"></div>
           <label>User</label>
-        </div> */}
+        </div>
         <div className="secondrow">
           {/* Side navigation menu */}
-          
-          {<Menu/>}
+          {<Menu />}
           <div className="secondcolumn">
-          <div className="prowone">
-              <label>User List</label>
-              <button onClick={newuser}>New User</button>
+            <div className="prowone">
+              <label>Users</label>
+              <button onClick={handleClick}>Create New</button>
             </div>
-            <div className='secthirdrow'>
-              <table>
-                <thead>
-                  <th> Id</th>
-                  <th> Users</th>
-                  <th> UserRoles</th>
-                </thead>
-                <tbody>
-                
-                    {array.map((item,index)=>{
-                       
-                        return<>
-                        <tr>
-                        <td onClick={()=>{edituser(item.id,item.txtUserName)}}>{item.id}</td>
-                        <td>{item.txtUserName}</td>
-                        <td>{item.txtUserRole}</td>
-                        <td></td>
-                        </tr>
-                        </>
-                       
-                    })}
-                     
-                    </tbody>
-              </table>
+            <table className="tablerow">
+              <tr className="TblFirstrow">
+                <th className="tblId">Id</th>
+                <th className="tblusers">Users</th>
+                <th className="tblrole">UserRoles</th>
+              </tr>
+
+              {array.map((item, index) => {
+                return (
+                  <>
+                    <tr onClick={newClick}>
+                      <td>{item.id}</td>
+                      <td>{item.txtUserName}</td>
+                      <td>{item.txtUserrole}</td>
+                    </tr>
+                  </>
+                )
+              })}
+            </table>
+
+            <div className="pbutton">
+              <button>1</button>
+              <button>2</button>
+              <button>...</button>
+              <button>10</button>
             </div>
-          </div>
-          <div className="pages">
-            <button>-</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>...</button>
-            <button>10</button>
-            <button>+</button>
           </div>
         </div>
       </div>

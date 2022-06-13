@@ -1,0 +1,328 @@
+body {
+  margin: 0;
+}
+
+.outer {
+  width: 100%;
+  height: 100vh;
+}
+.firstrow {
+ border-bottom: 1px solid black;
+  text-align: right;
+  height: 6vh;
+  width:100%;
+}
+.firstrow label {
+  color: rgb(130, 127, 127);
+  font-size: small;
+}
+.secondrow {
+  width: 100%;
+  height: 100vh;
+}
+.usericon {
+  height: 3vh;
+  width: 20px;
+  border-radius: 15px;
+  background-color: blue;
+  float: right;
+  padding-left:5px;
+  padding-top: 5px;
+}
+
+.firstcolumn {
+  width: 20%;
+  height: 100vh;
+  border-right: 1px solid black;
+  float: left;
+}
+.firstcolumn li {
+  list-style: none;
+  text-align: left;
+  padding: 8%;
+  background-color: lightgray;
+}
+
+.firstcolumn li:hover {
+  color: white;
+}
+.secondcolumn {
+  width: 79%;
+  height: 100vh;
+  float: right;
+}
+
+.heading {
+  width: 100%;
+  font-family: 'Lucida Sans';
+  font-size: 14px;
+  text-align: justify;
+}
+
+.pages {
+  text-align-last: right;
+}
+
+button {
+  border-style: hidden;
+  background-color: white;
+}
+
+.secondcolumn .secsecondrow button {
+  float: right;
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+  margin-bottom: 60px;
+  background-color: rgb(187, 180, 180);
+}
+
+.secondcolumn .secthirdrow {
+  width: 100%;
+  margin-left: 50px;
+  float: left;
+  border: 1px solid black;
+  border-left: 0;
+  border-right: 0;
+}
+
+th {
+  text-align: left;
+  background-color: white;
+  padding: 6px;
+}
+
+__________________________________________________ .usernamerow {
+  width: 100%;
+  height: 15vh;
+}
+/* .users label
+{
+    text-align: center;
+    color: blue;
+} */
+.users {
+  height: 3vh;
+  width: 20px;
+  border-radius: 25px;
+  background-color: red;
+  margin: 30%;
+  padding: 10px;
+  margin-top: 10px;
+}
+.singleuser {
+  overflow-x: scroll;
+  padding-top: 10%;
+  margin-right: 20%;
+}
+.eachuser {
+  padding: 2%;
+  float: left;
+
+  width: 10%;
+  height: 6vh;
+  text-align: center;
+}
+.statusnamerow {
+  width: 100%;
+  height: 12vh;
+  margin-top: 4%;
+}
+.taskbar1 {
+  width: 20%;
+  height: 60vh;
+  border: 1px solid black;
+  float: left;
+}
+.taskbar2 {
+  width: 20%;
+  height: 60vh;
+  border: 1px solid black;
+  float: left;
+  margin-left: 3%;
+}
+.taskbar3 {
+  width: 20%;
+  height: 60vh;
+  border: 1px solid black;
+  float: left;
+  margin-left: 3%;
+}
+.taskbar4 {
+  width: 20%;
+  height: 60vh;
+  border: 1px solid black;
+  float: left;
+  margin-left: 3%;
+}
+/* .tasks
+{
+    width:100%;
+    height: 50vh;
+   
+} */
+.statusnamerow label {
+  margin-left: 14%;
+}
+.userlabel {
+  padding-top: 40px;
+  color: blue;
+}
+
+/* Sprint  Styling */
+
+.prowone {
+  width: 80%;
+  height: 15vh;
+  /* border-bottom: 1px solid black; */
+  border-left: 5%;
+  padding-top: 5%;
+}
+.prowone label {
+  color: rgb(169, 173, 178);
+  font-weight: 900;
+  font-size: x-large;
+  text-align: center;
+  padding-left: 5%;
+}
+.prowone button {
+  float: right;
+  background-color: rgb(186, 184, 184);
+  color: white;
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  
+}
+.rowthree {
+  height: 10vh;
+  border-top: 1px solid black;
+}
+.pbutton {
+  text-align: right;
+}
+.pbutton button {
+  border: none;
+  background-color: white;
+}
+
+.pbutton button:hover {
+  font-weight: 500;
+  color: green;
+}
+
+.psecondrow {
+  width: 100%;
+  height: 10vh;
+  padding-bottom: 10%;
+  padding-left: 10%;
+}
+.titlerow {
+  width: 50%;
+  height: 10vh;
+  float: left;
+  padding-bottom: 10%;
+}
+.titlerow input {
+ width: 70%;
+  height: 6vh;
+  float: left;
+}
+.titlerow label {
+  color: gray;
+  width: 100%;
+  float: left;
+}
+.description {
+  width: 100%;
+  height: 25vh;
+  color: gray;
+}
+
+.description input {
+  width: 70%;
+  height: 20vh;
+}
+.typerow {
+ width: 100%;
+  height: 10vh;
+}
+.typerow select {
+  width: 36%;
+  height: 7vh;
+  float: left;
+  color: grey;
+}
+  
+
+.typerow label {
+  color: gray;
+}
+.ownerrow {
+  width: 72%;
+  height: 10vh;
+  float: left;
+}
+
+.ownerrow input{
+  width: 40%;
+  height: 3.5vh;
+}
+.ownerrow select {
+  width: 70%;
+  height: 5vh;
+  float: left;
+}
+.ownerrow label {
+  color: gray;
+}
+.ownerrow select {
+  color: grey;
+}
+.tablerow {
+  border-top: 1px solid gray;
+  width: 100%;
+  padding: 10px;
+margin: 0 auto;
+margin-top: 30px;
+}
+.tablerow th {
+  color: slategray;
+  border-bottom: 1px solid gray;
+  text-align: center;
+}
+.tablerow td {
+  color: slategray;
+  border-bottom: 1px solid gray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.tablerow tr {
+  text-align: center;
+}
+
+.TBL {
+  border: 1px;
+}
+
+.TblFirstrow {
+  width: 100%;
+}
+.tblId{
+  width:20%;
+}
+.tblusers{
+  width:20%;
+}
+.tblrole{
+  width:24%;
+}
+ .tbdata {
+  padding: 10px;
+}
+.Ttable{
+  width:60%;
+  
+} 
