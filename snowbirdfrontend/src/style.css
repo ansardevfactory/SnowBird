@@ -5,6 +5,7 @@ body {
 .outer {
   width: 100%;
   height: 100vh;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 .firstrow {
  border-bottom: 1px solid black;
@@ -291,7 +292,7 @@ margin-top: 30px;
 .tablerow th {
   color: slategray;
   border-bottom: 1px solid gray;
-  text-align: center;
+  text-align: left;
 }
 .tablerow td {
   color: slategray;
